@@ -52,17 +52,14 @@ p {
 .wrapper {
   display: flex;
   justify-content: space-between;
-}
-
-.offer {
-  margin-top: 149px;
+  align-items: center;
 }
 
 .title {
   font-weight: 900;
   font-size: 37px;
   width: 580px;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
 }
 
 .title span {
@@ -73,7 +70,7 @@ p {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   width: 413px;
-  margin-bottom: 38px;
+  padding-bottom: 38px;
 }
 
 .cta {
@@ -127,11 +124,11 @@ p {
 
 .enquiry-form {
   background-color: #ecf3f8;
-  height: 600px;
 }
 
 .form {
   padding-top: 42px;
+  padding-bottom: 60px;
 }
 
 .input {
@@ -167,4 +164,76 @@ p {
   text-align: center;
   padding-top: 65px;
   padding-bottom: 65px;
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    padding-top: 60px;
+  }
+
+  .offer {
+    margin-right: auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+
+  .opportunities {
+    flex-direction: column;
+  }
+
+  .opportunity {
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title {
+    width: auto;
+  }
+
+  .travel {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: auto;
+  }
+
+  .text {
+    width: auto;
+  }
+
+  .input {
+    width: auto;
+    padding-left: 15px;
+  }
+
+  .cta-form {
+    width: auto;
+    padding: 22px 30px;
+  }
 }
